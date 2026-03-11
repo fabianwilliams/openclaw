@@ -46,11 +46,11 @@ Start with the lowest tier that meets your needs. Escalate only when the use cas
 
 The delegate can **read** organizational data and **draft** messages for human review. Nothing is sent without approval.
 
-- Email: read inbox, draft replies (saved to Drafts folder).
-- Calendar: read events, propose new events (human confirms).
+- Email: read inbox, summarize threads, flag items for human action.
+- Calendar: read events, surface conflicts, summarize the day.
 - Files: read shared documents, summarize content.
 
-This tier requires only read permissions from the identity provider.
+This tier requires only read permissions from the identity provider. The agent does not write to any mailbox or calendar — drafts and proposals are delivered via chat for the human to act on.
 
 ### Tier 2: Send on Behalf
 
