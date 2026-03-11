@@ -1142,6 +1142,7 @@
                   "platforms/macos",
                   "platforms/linux",
                   "platforms/windows",
+                  "platforms/windows-production",
                   "platforms/android",
                   "platforms/ios",
                   "platforms/digitalocean",
