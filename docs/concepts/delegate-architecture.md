@@ -26,12 +26,12 @@ The delegate model maps directly to how executive assistants work: they have the
 
 OpenClaw's default mode is a **personal assistant** — one human, one agent. Delegates extend this to organizations:
 
-| Personal mode | Delegate mode |
-|---|---|
-| Agent uses your credentials | Agent has its own credentials |
-| Replies come from you | Replies come from the delegate, on your behalf |
-| One principal | One or many principals |
-| Trust boundary = you | Trust boundary = organization policy |
+| Personal mode               | Delegate mode                                  |
+| --------------------------- | ---------------------------------------------- |
+| Agent uses your credentials | Agent has its own credentials                  |
+| Replies come from you       | Replies come from the delegate, on your behalf |
+| One principal               | One or many principals                         |
+| Trust boundary = you        | Trust boundary = organization policy           |
 
 Delegates solve two problems:
 
@@ -263,7 +263,10 @@ A complete delegate configuration for an organizational assistant that handles e
     ],
   },
   bindings: [
-    { agentId: "org-assistant", match: { channel: "signal", peer: { kind: "group", id: "[group-id]" } } },
+    {
+      agentId: "org-assistant",
+      match: { channel: "signal", peer: { kind: "group", id: "[group-id]" } },
+    },
     { agentId: "org-assistant", match: { channel: "whatsapp", accountId: "org" } },
     { agentId: "main", match: { channel: "whatsapp" } },
     { agentId: "main", match: { channel: "signal" } },
